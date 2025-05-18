@@ -1,5 +1,8 @@
 if [ "$TMUX" = "" ]; then tmux; fi
-kitty icat --align=left /home/landsend/Immagini/funnycat_cropped.webp
+
+rand=$(($RANDOM%5))
+file="funnycat${rand}.webp"
+kitty icat --align=left /home/landsend/Immagini/Gatti/${file}
 
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
